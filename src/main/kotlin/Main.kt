@@ -1,7 +1,5 @@
-import com.nikhil.strings.printKotlin
-import com.nikhil.strings.puzzleFoo
-import  com.nikhil.functions.*
-
+package com.nikhil
+import com.nikhil.basic.example.max
 
 
 fun main() {
