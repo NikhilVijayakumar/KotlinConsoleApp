@@ -1,7 +1,7 @@
 package com.nikhil.basic.example
 
 class CollectionExample {
-    val fruits = listOf("banana", "avocado", "apple", "kiwifruit")
+    private val fruits = listOf("banana", "avocado", "apple", "kiwifruit")
 
     fun iterateList(){
         for (item in fruits) {

@@ -2,10 +2,14 @@ package com.nikhil
 import com.nikhil.basic.example.max
 
 
-fun main() {
+object Main {
 
-    //printKotlin()
-    //puzzleFoo()
-    println("Max = ${ max(20,30)}")
+    @JvmStatic fun main() {
 
+        //printKotlin()
+        //puzzleFoo()
+        println("Max = ${ max(20,30)}")
+
+    }
 }
+
