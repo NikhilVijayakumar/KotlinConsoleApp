@@ -3,7 +3,7 @@ package com.nikhil.collection
 import com.nikhil.com.nikhil.data.Library
 
 fun main(){
-    //mapExample1()
+   // mapExample1()
    // joinToStringExample()
     indexMapExample()
 }
@@ -13,7 +13,8 @@ fun indexMapExample() {
         val authors = book.authors.joinToString { it.name }
         "${index+1} ${book.title} by $authors"
     }.joinToString("\n")
-    print(bookIndexed)
+    println(bookIndexed)
+
 }
 
 fun joinToStringExample() {
@@ -24,12 +25,14 @@ fun joinToStringExample() {
         authors.joinToString { it.name }
     }.joinToString(separator = "\n")
 
-    print(authorList)
+    println(authorList)
+
+
 }
 
 fun mapExample1() {
    val authorList = Library.bookList.map { book->
         book.authors
-    }
-    print(authorList)
+    }.onEach { println(it) }
+
 }

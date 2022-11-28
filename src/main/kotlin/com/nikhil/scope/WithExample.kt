@@ -8,8 +8,8 @@ import com.nikhil.data.marge
 fun main() {
 
     println("homer start : $homer")
-    moveToIllinois(homer)
-    println("homer updated : $homer")
+    val address = moveToIllinois(homer)
+    println("homer updated : $address")
     println("marge start : $marge")
     marge?.let {
         moveToIllinois(it)
@@ -20,4 +20,5 @@ fun main() {
 fun moveToIllinois(fictionalPerson: FictionalPerson) = with(fictionalPerson.address) {
     state = "Illinois"
     zipCode = 62629
+    this
 }

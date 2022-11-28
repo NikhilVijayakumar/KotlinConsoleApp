@@ -33,4 +33,4 @@ object Person {
 }
 
 val homer = Person.harry
-val marge = Person.hermione
+var marge = Person.hermione
